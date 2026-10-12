@@ -1,0 +1,20 @@
+[project]
+name = "qldpc-bposd-jax"
+version = "0.1.0"
+description = "BP+OSD decoding in JAX for CSS quantum LDPC codes"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jax>=0.11.2",
+    "numpy>=2.5.3",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.0",
+]
